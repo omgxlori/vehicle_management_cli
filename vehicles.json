@@ -1,0 +1,107 @@
+[
+  {
+    "vin": "e5vne0ty1dugudyb6c5ga",
+    "color": "blue",
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2021,
+    "weight": 3000,
+    "topSpeed": 130,
+    "wheels": [
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      }
+    ],
+    "type": "Car"
+  },
+  {
+    "vin": "fxhffs9cjxhthoe6f3vo4p",
+    "color": "red",
+    "make": "Ford",
+    "model": "F-150",
+    "year": 2021,
+    "weight": 5000,
+    "topSpeed": 120,
+    "wheels": [
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      }
+    ],
+    "type": "Truck",
+    "towingCapacity": 10000
+  },
+  {
+    "vin": "hegbh4s3fm2rziwcpjpp4",
+    "color": "black",
+    "make": "Harley Davidson",
+    "model": "Sportster",
+    "year": 2021,
+    "weight": 500,
+    "topSpeed": 125,
+    "wheels": [
+      {
+        "diameterValue": 17,
+        "tireBrandValue": "Michelin"
+      },
+      {
+        "diameterValue": 17,
+        "tireBrandValue": "Michelin"
+      }
+    ],
+    "type": "Motorbike"
+  },
+  {
+    "vin": "w2gb0893klkveq8f5mbr",
+    "color": "Gray",
+    "make": "Jeep",
+    "model": "Compass",
+    "year": 2021,
+    "weight": 3164,
+    "topSpeed": 160,
+    "wheels": [
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      },
+      {
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
+      }
+    ],
+    "type": "Car"
+  }
+]
