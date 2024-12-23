@@ -1,6 +1,6 @@
 [
   {
-    "vin": "e5vne0ty1dugudyb6c5ga",
+    "vin": "plfppwnooeacivcyyr6",
     "color": "blue",
     "make": "Toyota",
     "model": "Camry",
@@ -28,7 +28,7 @@
     "type": "Car"
   },
   {
-    "vin": "fxhffs9cjxhthoe6f3vo4p",
+    "vin": "gzv442pv7bp5xu0lyx9xjf",
     "color": "red",
     "make": "Ford",
     "model": "F-150",
@@ -57,7 +57,7 @@
     "towingCapacity": 10000
   },
   {
-    "vin": "hegbh4s3fm2rziwcpjpp4",
+    "vin": "l2dm3jnihhe0rv0irdhua",
     "color": "black",
     "make": "Harley Davidson",
     "model": "Sportster",
@@ -66,23 +66,23 @@
     "topSpeed": 125,
     "wheels": [
       {
-        "diameterValue": 17,
-        "tireBrandValue": "Michelin"
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
       },
       {
-        "diameterValue": 17,
-        "tireBrandValue": "Michelin"
+        "diameterValue": 18,
+        "tireBrandValue": "GoodYear"
       }
     ],
     "type": "Motorbike"
   },
   {
-    "vin": "w2gb0893klkveq8f5mbr",
-    "color": "Gray",
+    "vin": "igebyi6013s4gbq6q9i4k6",
+    "color": "Silver",
     "make": "Jeep",
     "model": "Compass",
     "year": 2021,
-    "weight": 3164,
+    "weight": 3600,
     "topSpeed": 160,
     "wheels": [
       {

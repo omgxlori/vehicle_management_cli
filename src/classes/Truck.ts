@@ -1,16 +1,11 @@
-// Import the Vehicle, Motorbike, Car, Wheel, and AbleToTow classes/interfaces
-import Vehicle from './Vehicle.js';
-import Motorbike from './Motorbike.js';
-import Car from './Car.js';
-import Wheel from './Wheel.js';
-import AbleToTow from '../interfaces/AbleToTow.js';
+import Vehicle from "./Vehicle.js";
+import Wheel from "./Wheel.js";
+import AbleToTow from "../interfaces/AbleToTow.js";
 
-// The Truck class should extend the Vehicle class and should implement the AbleToTow interface
 class Truck extends Vehicle implements AbleToTow {
   wheels: Wheel[];
   towingCapacity: number;
 
-  // Create a constructor that accepts the properties of the Truck class
   constructor(
     vin: string,
     color: string,
@@ -22,46 +17,45 @@ class Truck extends Vehicle implements AbleToTow {
     wheels: Wheel[],
     towingCapacity: number
   ) {
-    // Call the constructor of the parent class, Vehicle
     super(vin, color, make, model, year, weight, topSpeed);
 
-    // Initialize the wheels
+    // Ensure truck has exactly 4 wheels; otherwise, create defaults
     this.wheels =
       wheels.length === 4
         ? wheels
-        : [
-            new Wheel(), // Default wheel 1
-            new Wheel(), // Default wheel 2
-            new Wheel(), // Default wheel 3
-            new Wheel(), // Default wheel 4
-          ];
+        : [new Wheel(), new Wheel(), new Wheel(), new Wheel()];
 
-    // Initialize towing capacity
     this.towingCapacity = towingCapacity;
   }
 
-  // Implement the tow method from the AbleToTow interface
-  tow(vehicle: Truck | Motorbike | Car): void {
+  // Towing logic with improved messaging
+  tow(vehicle: Vehicle): void {
+    if (vehicle.vin === this.vin) {
+      console.log("❌ A truck cannot tow itself.");
+      return;
+    }
+
     const { make, model, weight } = vehicle;
 
     if (weight <= this.towingCapacity) {
-      console.log(`The truck is towing ${make} ${model}.`);
+      console.log(
+        `✅ The ${this.make} ${this.model} is towing the ${make} ${model} successfully!`
+      );
     } else {
-      console.log(`${make} ${model} is too heavy to be towed by this truck.`);
+      console.log(
+        `❌ The ${make} ${model} is too heavy to be towed by the ${this.make} ${this.model}.`
+      );
     }
   }
 
-  // Override the printDetails method from the Vehicle class
+  // Overridden printDetails with additional truck info
   override printDetails(): void {
     super.printDetails();
     console.log(`Towing Capacity: ${this.towingCapacity} kg`);
     console.log(
       `Wheels: ${this.wheels
-        .map(
-          (wheel, index) =>
-            `Wheel ${index + 1}: ${wheel.tireBrandValue}, Diameter: ${wheel.diameterValue}`
-        )
-        .join('; ')}`
+        .map((wheel, i) => `Wheel ${i + 1}: ${wheel.tireBrandValue || "Default"}`)
+        .join(", ")}`
     );
   }
 }
