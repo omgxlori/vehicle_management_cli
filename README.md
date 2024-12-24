@@ -32,8 +32,8 @@ npm:
 ## Installation
 1. Clone the Repository:
 ```md
-git clone <repository-url>
-cd <repository-directory>
+git clone [<repository-url>](https://github.com/omgxlori/vehicle_management_cli.git)
+cd vehicle_management_cli
 ```
 2. Install Dependencies:
 ```md
@@ -43,13 +43,13 @@ npm i
 ```
 3. Start the Project:
 ```md
-npm start
+npm run start
 ```
 
 ## Usage
 To start the CLI application, run the following command:
 ```md
-npm start
+npm run start
 ```
 Upon running the command, you will be presented with an interactive prompt asking if you want to create a new vehicle or select an existing one. After creating a vehicle, you can perform actions such as starting, accelerating, decelerating, or printing details. All vehicles are saved to a JSON file to persist data between sessions.
 
